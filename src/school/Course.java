@@ -40,15 +40,20 @@ public class Course {
     }
 
     public void locateAndDropStudent(String student) {
+        locationOfStudent = locationOfStudent(student);
+        for (int i = locationOfStudent; i < numberOfStudents; i++) {
+            studentsList[i] = studentsList[i + 1];
+        }
+        numberOfStudents--;
+    }
+
+    private int locationOfStudent(String student) {
         for (int i = 0; i < numberOfStudents; i++) {
             if (studentsList[i].equals(student)) {
                 locationOfStudent = i;
             }
         }
-        for (int i = locationOfStudent; i < numberOfStudents; i++) {
-            studentsList[i] = studentsList[i + 1];
-        }
-        numberOfStudents--;
+        return locationOfStudent;
     }
 
     public String[] getStudents() {
