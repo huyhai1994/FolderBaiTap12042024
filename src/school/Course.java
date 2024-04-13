@@ -5,7 +5,6 @@ public class Course {
     private String[] studentsList = new String[100];
     private int numberOfStudents;
     private int locationOfStudent;
-
     public Course() {
         this("anonymous");
     }
