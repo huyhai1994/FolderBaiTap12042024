@@ -39,7 +39,7 @@ public class Course {
         return studentsList;
     }
 
-    public void locateAndDropStudent(String student) {
+    public void DropStudent(String student) {
         locationOfStudent = locationOfStudent(student);
         for (int i = locationOfStudent; i < numberOfStudents; i++) {
             studentsList[i] = studentsList[i + 1];

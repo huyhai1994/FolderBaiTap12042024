@@ -13,7 +13,7 @@ public class TestCourse {
         displayStudentsInCourse(course1.getStudents(), course1.getNumberOfStudents());
         displayCourseName(course2.getCourseName());
         displayStudentsInCourse(course2.getStudents(), course2.getNumberOfStudents());
-        course1.locateAndDropStudent("Peter jones");
+        course1.DropStudent("Peter jones");
         displayCourseName(course1.getCourseName());
         displayStudentsInCourse(course1.getStudents(), course1.getNumberOfStudents());
 
